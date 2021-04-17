@@ -1,0 +1,65 @@
+header {
+  nav {
+    background-color: $bl-color;
+    @include transition(0.4s);
+
+    menu {
+      @extend %flex-center;
+      margin-bottom: 110px;
+
+    }
+    li {
+      list-style: none;
+      &.active {
+        a {
+          background-color: $main-color;
+        }
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 35px 25px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+header .header-background {
+  background-color: #f6f2f2;
+  padding-top:65px;
+}
+header {
+  .about-us-wrapper {
+    display: flex;
+
+  }
+  .left-wrapper {
+    width: 60%;
+    button {
+      border: 0;
+      background-color: $main-color;
+      color: white;
+      @extend %button-size;
+      font-size: $font-size-lg;
+    }
+
+    h1 {
+      @extend %header_title;
+      padding-bottom: 35px;
+    }
+    p {
+      color: $main-font-color;
+      width: 80%;
+      line-height: 20px;
+      font-size: $font-size-md;
+      padding-bottom: 30px;
+    }
+  }
+}
+header menu li.active,
+header menu li:hover {
+  background-color: $main-color;
+}
+.about-us{
+  padding-bottom: 115px;
+}

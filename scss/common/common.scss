@@ -1,0 +1,17 @@
+.container{
+  max-width:$content_width;
+  margin:0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: $font,sans-serif;
+}
+.line{
+  max-width: 130px;
+  border-bottom: 2px solid;
+  color: $main-color;
+  margin: 0 auto;
+  margin-top:35px;
+}
